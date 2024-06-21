@@ -1,0 +1,53 @@
+@import "../../public/fonts/stylesheet.css";
+
+:root {
+  --dark: #d7bda7;
+  --light: #e7d7ca;
+  --current: #66ff66;
+  --opponent: #ff6666;
+}
+
+p,button {
+  font-family: "poetsenoneregular";
+}
+
+button {
+  margin: 10px
+}
+
+div.gameContainer {
+  display: inline-block;
+  border: solid;
+  width: fit-content;
+  padding: 2em;
+}
+
+div.gameContainer > div {
+  border: solid;
+}
+
+div.sq {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+img.piece {
+  position: absolute;
+}
+
+div.viewbox {
+  display: grid;
+  row-gap: 10%;
+  column-gap: 5%;
+  grid-template-rows: 100% 100%;
+}
+
+div.viewbox > img {
+  position: unset;
+}
+
+.gameBottom {
+  flex: 1;
+  text-align: center;
+}
