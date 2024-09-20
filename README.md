@@ -1,9 +1,10 @@
 # katamarichess
 A custom chess variant that revolves around combining pieces together through captures.
 
-This is a website that is currently not hosted, it can be compiled with `bun run
-build` and hosted with `cd dist; http-server` (where `http-server` can be
-installed with `npm i http-server -g`)
+This is a website that is currently not hosted but it is containerised.
+- Build: `sudo docker build -t katamarichess`
+- Run: `sudo docker run katamarichess:latest` (add: `-p myport:8080` to host on
+  `myport` instead of 8080)
 
 Instructions on how to play can be found on the website itself, this project is
 local-play only.
